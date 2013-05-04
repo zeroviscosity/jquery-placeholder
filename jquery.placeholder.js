@@ -25,9 +25,9 @@
                         input.removeClass('placeholder');
                     }
                 };
+            
             if (typeof placeholder !== 'undefined' && placeholder !== null) {
                 add();
-    
                 input.focus(function() {
                     remove();
                 }).blur(function() {
