@@ -11,5 +11,5 @@ Add the following to your web page:
 Add this to your JavaScript:
 
     $(document).ready(function() {
-      $(input).placeholder();
+      $('input[placeholder]').placeholder();
     });
