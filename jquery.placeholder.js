@@ -7,7 +7,8 @@
 ;(function($) {
     $.fn.placeholder = function(options) {
         return this.each(function() {
-            if (this.hasOwnProperty('placeholder')) {
+            // Ensure that this plugin is needed
+            if (typeof this.placeholder !== 'undefined') {
                 return;
             }
 
@@ -26,6 +27,7 @@
                     }
                 };
             
+            //Ensure that a placeholder has been defined
             if (typeof placeholder !== 'undefined' && placeholder !== null) {
                 add();
                 input.focus(function() {
