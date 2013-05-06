@@ -5,10 +5,15 @@
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 ;(function($) {
-    $.fn.placeholder = function(options) {
+    $.fn.placeholder = function() {
+        // Ensure that this plugin is needed
+        var supported = false;
+        if ('placeholder' in document.createElement('input')) {
+            supported = true;
+        }
+
         return this.each(function() {
-            // Ensure that this plugin is needed
-            if (typeof this.placeholder !== 'undefined') {
+            if (supported) {
                 return;
             }
 
