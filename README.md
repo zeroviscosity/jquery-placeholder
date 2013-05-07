@@ -1,5 +1,7 @@
 ### jQuery Placeholder
 
+Tested in Internet Explorer 6, 7, 8 and 9.
+
 Add the following to your web page:
 
 	<script src="jquery.placeholder.js"></script>
