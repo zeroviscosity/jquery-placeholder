@@ -5,6 +5,7 @@
 *-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*-*/
 
 ;(function($) {
+    'use strict';
     $.fn.placeholder = function() {
         // Ensure that this plugin is needed
         var supported = false;
